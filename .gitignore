@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+
+# PyInstaller build artifacts
+build/
+dist/
+
+# Generated output
+output/
+
+# Editor/OS
+.DS_Store

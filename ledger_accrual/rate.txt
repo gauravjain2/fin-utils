@@ -1,0 +1,16 @@
+# rate.txt - place this file in the same folder as your Excel ledger files.
+#
+# Rules:
+#   - frequency: one of M (monthly), Q (quarterly), Y (yearly/financial year)
+#   - each rate line: from: DD/MM/YYYY, to: DD/MM/YYYY, rate: <percent>
+#   - dates are dd/mm/yyyy, rate is a percent (12 means 12%, not 0.12)
+#   - ranges must not overlap; from/to are inclusive
+#   - ranges must cover every date interest is accrued for (including the
+#     final period-end boundary), otherwise processing errors out
+#   - lines starting with # and blank lines are ignored
+
+frequency: Q
+
+from: 01/04/2025, to: 15/09/2025, rate: 16
+from: 16/09/2025, to: 20/09/2025, rate: 18
+from: 21/09/2025, to: 31/03/2026, rate: 20
